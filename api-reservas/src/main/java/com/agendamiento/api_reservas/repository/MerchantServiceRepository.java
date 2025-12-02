@@ -7,6 +7,6 @@ import java.util.UUID;
 
 public interface MerchantServiceRepository extends JpaRepository<MerchantService, UUID> {
 
-    
+
     List<MerchantService> findByMerchantIdAndActiveTrue(UUID merchantId);
 }
