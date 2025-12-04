@@ -17,7 +17,7 @@ public interface AppointmentRepository extends JpaRepository<Appointment, UUID> 
             LocalDateTime end
     );
 
-    Optional<Appointment> findByWompiReference(String wompiReference);
+   // Optional<Appointment> findByWompiReference(String wompiReference);
 
     @Query("SELECT a FROM Appointment a " +
             "WHERE a.merchant.id = :merchantId " +
